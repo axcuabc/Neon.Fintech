@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon.Fintech — Финтех-платформа</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="#hero" aria-label="Neon.Fintech logo">
+        <span class="sr-only">Neon.Fintech</span>
+        <!-- Neon.Fintech · logo horizontal -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-hidden="true">
+          <defs>
+            <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+              <stop offset="0" stop-color="#10F7A5"/>
+              <stop offset="1" stop-color="#8B5CF6"/>
+            </linearGradient>
+          </defs>
+          <g transform="translate(12,12)" fill="none" stroke="url(#grad)">
+            <rect x="0" y="0" width="136" height="136" rx="24" stroke-width="8"/>
+            <circle cx="68" cy="68" r="48" stroke-width="8" opacity="0.9"/>
+            <path d="M38 86 L60 70 L76 78 L98 56" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M98 56 L98 68 L110 56 Z" fill="url(#grad)" stroke="none"/>
+          </g>
+          <g fill="url(#grad)" font-family="Montserrat, Manrope, Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial" font-weight="700" letter-spacing="1">
+            <text x="176" y="70" font-size="64">NEON</text>
+            <text x="176" y="140" font-size="64">FINTECH</text>
+          </g>
+        </svg>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="#architecture">Архитектура</a></li>
+          <li><a href="#capabilities">Возможности</a></li>
+          <li><a href="#mockup">Прототип</a></li>
+          <li><a href="#case">Кейсы</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <a class="btn ghost" href="#final-cta">Запросить аудит</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="tag">Финтех как продукт</div>
+          <h1>Финтех-платформа, которая конвертирует трафик в заявки</h1>
+          <p class="lead">Редизайн UX, ИИ-чат, аналитика — заявки уже в первую неделю. Создаём цифровую воронку, которая подстраивается под ваш продукт и канал привлечения.</p>
+          <ul class="hero-points">
+            <li>Подбор сценариев продаж под ваш продукт за один день.</li>
+            <li>Автоматическая квалификация и запись лидов в CRM без участия менеджера.</li>
+            <li>Прозрачная аналитика на каждом шаге воронки с уведомлениями в Slack и Telegram.</li>
+          </ul>
+          <div class="cta-group">
+            <a class="btn primary" href="#mockup">Посмотреть прототип</a>
+            <a class="btn secondary" href="#final-cta">Запросить аудит</a>
+          </div>
+          <ul class="badges" aria-label="Преимущества">
+            <li>LCP 1.7s</li>
+            <li>NDA</li>
+            <li>24/7 поддержка</li>
+            <li>PCI DSS ready</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="glass-card">
+            <h2>Neon Assistant</h2>
+            <p>Понимает запрос клиента, предлагает тариф, сохраняет лид в CRM.</p>
+            <div class="chat-bubble">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <div class="stat">
+              <strong>+38%</strong>
+              <span>конверсия в лид</span>
+            </div>
+          </div>
+          <div class="floating-card">
+            <p>Собрано событий: <strong>143</strong></p>
+            <span>клики · скроллы · оплаты</span>
+          </div>
+        </div>
+      </div>
+      <div class="container trust-bar" aria-label="Компании, которые уже с нами">
+        <span>Доверяют команды:</span>
+        <ul>
+          <li>Digital Bank «Неон»</li>
+          <li>PayLink</li>
+          <li>InsureNow</li>
+          <li>AltCapital</li>
+          <li>GlobalPay</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="architecture" class="section architecture">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Схема продукта</span>
+          <h2>Архитектура решения</h2>
+          <p>Каждый блок работает синхронно: сценарий заявки, ИИ-помощник и аналитика дают прозрачный путь от первого экрана до оплаты.</p>
+        </header>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Сценарий заявки в 3 шага</h3>
+            <p>Серии экранов под конкретный оффер: квалификация, подбор тарифа и подтверждение контактов.</p>
+            <ul>
+              <li>AB-тестирование офферов в реальном времени.</li>
+              <li>Сегментация лидов по приоритету и бюджету.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>ИИ-чат с автоответами и PDF-презентацией</h3>
+            <p>Поддерживает диалог, отправляет персональную презентацию и бронирует демо в календаре.</p>
+            <ul>
+              <li>Готовые сценарии ответов для банков, страховщиков и эквайринга.</li>
+              <li>Сбор и доставка PDF-кейсов в один клик.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>События аналитики</h3>
+            <p>Клики, скроллы и оплаты автоматически попадают в CRM, чтобы вы видели полный путь клиента.</p>
+            <ul>
+              <li>Интеграции с Power BI, Metabase и Google Looker Studio.</li>
+              <li>Единые отчёты по каналам и ROI в режиме Live.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities" class="section capabilities">
+      <div class="container capabilities-grid">
+        <div class="capabilities-copy">
+          <header class="section-header align-left">
+            <span class="eyebrow">Комплект поставки</span>
+            <h2>Не просто лендинг, а цифровая воронка продаж</h2>
+            <p>Мы закрываем весь цикл: от исследования аудитории до запуска сквозной аналитики. Команда интеграции подключает виджеты, платёжные шлюзы и внутренние системы, а команда продукта ведёт гипотезы после запуска.</p>
+          </header>
+          <dl class="feature-list">
+            <div>
+              <dt>UX-исследование &amp; CJM</dt>
+              <dd>Интервью с клиентами, карта пути и прототипы для согласования в Miro.</dd>
+            </div>
+            <div>
+              <dt>Модульные UI-компоненты</dt>
+              <dd>25+ адаптивных блоков на React/Next с готовыми состояниями и библиотекой стилей.</dd>
+            </div>
+            <div>
+              <dt>Глубокая интеграция</dt>
+              <dd>API для CRM (Bitrix, HubSpot, Salesforce), вебхуки для платёжных провайдеров и KYC.</dd>
+            </div>
+            <div>
+              <dt>Операционная поддержка</dt>
+              <dd>24/7 мониторинг, SLA 30 минут, еженедельные отчёты с рекомендациями по росту.</dd>
+            </div>
+          </dl>
+        </div>
+        <aside class="capabilities-aside">
+          <h3>Что вы получаете в первую неделю</h3>
+          <ul class="checklist">
+            <li>Диагностика текущей воронки и бенчмарки.</li>
+            <li>Флоу лид-форм и чат-бот, который закрывает возражения.</li>
+            <li>Настроенный калькулятор тарифов и динамические офферы.</li>
+            <li>Подключённые дашборды конверсии, источников и LTV.</li>
+          </ul>
+          <div class="stat-card">
+            <span class="label">Средний ROI</span>
+            <strong>4.6x</strong>
+            <p>по данным запусков в финтех и страховании за 2023–2024.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="mockup" class="section mockup">
+      <div class="container mockup-grid">
+        <div class="mockup-frame">
+          <div class="mockup-screen">
+            <div class="mockup-header">
+              <span class="logo-dot"></span>
+              <span class="mockup-title">Neon Финтех-платформа</span>
+              <button class="mockup-cta">Начать расчёт</button>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-widget" data-label="виджет ИИ">Виджет ИИ</div>
+              <div class="mockup-calculator" data-label="калькулятор тарифа">Калькулятор тарифа</div>
+              <div class="mockup-checkout" data-label="быстрый чек-аут">Быстрый чек-аут</div>
+            </div>
+          </div>
+        </div>
+        <div class="mockup-copy">
+          <h3>Сайт в работе</h3>
+          <p>Главный экран показывает ценность продукта, виджет ИИ собирает вопросы клиента, калькулятор просчитывает персональные тарифы, а быстрый чек-аут позволяет завершить оформление без перехода на сторонние сервисы.</p>
+          <ul class="annotations" aria-label="Подписи к макету">
+            <li><span class="bullet"></span>виджет ИИ</li>
+            <li><span class="bullet"></span>калькулятор тарифа</li>
+            <li><span class="bullet"></span>быстрый чек-аут</li>
+            <li><span class="bullet"></span>динамические офферы для сегментов</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="metrics" class="section metrics">
+      <div class="container">
+        <header class="section-header light">
+          <span class="eyebrow">Результаты</span>
+          <h2>Метрики, которые подтверждают ценность</h2>
+          <p>Все цифры — реальные результаты клиентов Neon.Fintech. Мы фиксируем каждый показатель в CRM, чтобы команда видела эффект и могла масштабировать трафик без риска.</p>
+        </header>
+        <div class="metrics-panel">
+          <div class="metric"><strong>+38%</strong><span>конверсия</span></div>
+          <div class="metric"><strong>5-й день</strong><span>первый лид</span></div>
+          <div class="metric"><strong>-33%</strong><span>отказы</span></div>
+          <div class="metric"><strong>1.7s</strong><span>LCP</span></div>
+          <div class="metric"><strong>+12%</strong><span>средний чек</span></div>
+        </div>
+        <div class="metrics-note">
+          <p><strong>Как считаем:</strong> сравниваем показатели до и после запуска, подключаем UTM-разметку и сквозную аналитику, фиксируем прирост в единых дашбордах. Команда сопровождения помогает выявить новые точки роста каждые две недели.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="case" class="section case-study">
+      <div class="container case-grid">
+        <div class="case-copy">
+          <header class="section-header align-left">
+            <span class="eyebrow">Кейс</span>
+            <h2>Как банк «Неон» запустил онлайн-эквайринг за 14 дней</h2>
+            <p>Задача — увеличить долю заявок с мобильного трафика и снизить нагрузку на отдел продаж. Мы провели экспресс-исследование, переработали посадочную страницу, внедрили ИИ-чат и калькулятор тарифов.</p>
+          </header>
+          <ul class="case-results">
+            <li><strong>+64%</strong> заявок с мобильных устройств уже на второй неделе.</li>
+            <li><strong>8 часов</strong> — время на интеграцию CRM и платёжного шлюза.</li>
+            <li><strong>98%</strong> диалогов закрыты без участия менеджера.</li>
+            <li>Клиент получил согласованный пакет брендовых экранов и гайд по скриптам.</li>
+          </ul>
+        </div>
+        <aside class="case-panel">
+          <h3>Что сделали шаг за шагом</h3>
+          <ol>
+            <li>Провели аудит текущего лендинга и карту кликов.</li>
+            <li>Настроили ИИ-чат с передачей диалогов в Slack.</li>
+            <li>Добавили калькулятор тарифа и предложения для разных сегментов.</li>
+            <li>Подключили метрики LTV и еженедельный отчёт в Power BI.</li>
+          </ol>
+          <a class="btn tertiary" href="#final-cta">Получить разбор кейса</a>
+        </aside>
+      </div>
+    </section>
+
+    <section id="ecosystem" class="section ecosystem">
+      <div class="container ecosystem-grid">
+        <div>
+          <header class="section-header align-left">
+            <span class="eyebrow">Интеграции и безопасность</span>
+            <h2>Готовы к корпоративным требованиям</h2>
+            <p>Neon.Fintech работает в облаках, сертифицированных по ISO 27001 и SOC 2. Все данные шифруются, а права доступа управляются через RBAC и SSO.</p>
+          </header>
+          <ul class="security-list">
+            <li>Соответствие 152-ФЗ, GDPR и PCI DSS.</li>
+            <li>Встроенный журнал аудита и алерты о подозрительных действиях.</li>
+            <li>Поддержка двухфакторной аутентификации и аппаратных ключей.</li>
+          </ul>
+        </div>
+        <div class="integration-panel">
+          <h3>Интеграции из коробки</h3>
+          <div class="integration-tags">
+            <span>Salesforce</span>
+            <span>HubSpot</span>
+            <span>Bitrix24</span>
+            <span>Power BI</span>
+            <span>Looker Studio</span>
+            <span>Slack</span>
+            <span>Telegram</span>
+            <span>Stripe</span>
+            <span>CloudPayments</span>
+          </div>
+          <p>Если нужной интеграции нет — подключим по API в течение 3–5 дней.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section process">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Процесс и сроки</span>
+          <h2>Запускаем продукт быстро и прозрачно</h2>
+        </header>
+        <ol class="timeline">
+          <li>
+            <span class="time">15 мин</span>
+            <p>Бриф и постановка целей</p>
+            <span class="detail">Заполняем форму, уточняем KPI и текущие метрики.</span>
+          </li>
+          <li>
+            <span class="time">1–2 дня</span>
+            <p>UX-прототип и сценарии</p>
+            <span class="detail">Готовим интерактивный прототип и согласовываем коммуникацию с юрслужбой.</span>
+          </li>
+          <li>
+            <span class="time">3–7 дней</span>
+            <p>Дизайн и разработка</p>
+            <span class="detail">Собираем адаптивные экраны, подключаем CRM и платёжные сервисы.</span>
+          </li>
+          <li>
+            <span class="time">1 день</span>
+            <p>Запуск и подключение аналитики</p>
+            <span class="detail">Готовим отчёты, обучаем команду и подключаем поддержку.</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">FAQ</span>
+          <h2>Ответы на популярные вопросы</h2>
+        </header>
+        <div class="faq-grid">
+          <article>
+            <h3>Сколько времени занимает внедрение?</h3>
+            <p>Базовый пакет запускается за 10–14 дней. При наличии сложных интеграций (скоринг, антифрод) закладываем до 21 дня.</p>
+          </article>
+          <article>
+            <h3>Нужна ли ваша команда после запуска?</h3>
+            <p>Мы предлагаем поддержку в формате product-ops: отслеживаем метрики, готовим гипотезы и помогаем с AB-тестами.</p>
+          </article>
+          <article>
+            <h3>Как вы гарантируете безопасность данных?</h3>
+            <p>Используем шифрование TLS 1.3, проводим ежеквартальный pentest, соблюдаем 152-ФЗ и стандарты PCI DSS.</p>
+          </article>
+          <article>
+            <h3>Можно ли интегрировать собственный scoring?</h3>
+            <p>Да, у нас есть готовые коннекторы к API банков и микрофинансовых организаций, поддерживаем вебхуки и очереди.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="review" class="section review">
+      <div class="container review-card">
+        <div class="quote-mark" aria-hidden="true">“</div>
+        <blockquote>
+          <p>«Команда Neon.Fintech перевела нас из хаоса лидов в системную воронку. Уже на первой неделе получили лиды лучше платной рекламы.»</p>
+          <footer>
+            <cite>Александр Воронов</cite>
+            <span>COO Neon.Fintech</span>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer id="final-cta" class="final-cta">
+    <div class="container final-cta-grid">
+      <div>
+        <span class="eyebrow">Финальный шаг</span>
+        <h2>Хотите так же? Бесплатный аудит за 15 минут</h2>
+        <p>Покажем прототип, подберём сценарии и просчитаем экономику под ваш трафик.</p>
+      </div>
+      <div class="cta-buttons">
+        <a class="btn primary" href="https://t.me/neon_fintech" target="_blank" rel="noopener">Получить аудит</a>
+        <a class="btn secondary" href="#" download>Скачать PDF-кейс</a>
+      </div>
+    </div>
+    <p class="footer-note">© 2024 Neon.Fintech. Все права защищены.</p>
+  </footer>
+
+</body>
+</html>
