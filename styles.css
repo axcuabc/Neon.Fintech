@@ -191,7 +191,7 @@ p {
 }
 
 .hero {
-  padding: 80px 0 120px;
+  padding: 56px 0 80px;
   background: var(--bg-alt);
   position: relative;
   overflow: hidden;
@@ -200,8 +200,8 @@ p {
 .hero::before {
   content: '';
   position: absolute;
-  inset: 20% -10% auto;
-  height: 320px;
+  inset: 18% -10% auto;
+  height: 260px;
   background: radial-gradient(circle at center, rgba(16, 247, 165, 0.16), transparent 70%);
   pointer-events: none;
 }
@@ -211,8 +211,8 @@ p {
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: center;
-  gap: 64px;
+  align-items: start;
+  gap: 48px;
 }
 
 .hero-copy h1 {
@@ -222,28 +222,28 @@ p {
 .lead {
   color: var(--text-strong);
   font-size: 18px;
-  margin: 20px 0 24px;
+  margin: 16px 0 20px;
 }
 
 .tag {
   display: inline-flex;
-  padding: 8px 18px;
+  padding: 7px 16px;
   border-radius: 999px;
   background: linear-gradient(135deg, #0d2352, #4a1fbf);
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 24px;
-  box-shadow: 0 14px 32px rgba(22, 35, 84, 0.28);
+  margin-bottom: 18px;
+  box-shadow: 0 12px 26px rgba(22, 35, 84, 0.24);
 }
 
 .hero-points {
   list-style: none;
   padding: 0;
-  margin: 0 0 32px;
+  margin: 0 0 24px;
   display: grid;
-  gap: 12px;
+  gap: 10px;
   color: var(--text-strong);
 }
 
@@ -256,8 +256,8 @@ p {
 .cta-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 28px;
+  gap: 14px;
+  margin-bottom: 24px;
 }
 
 .badges {
@@ -289,10 +289,10 @@ p {
 .glass-card {
   background: rgba(255, 255, 255, 0.92);
   border-radius: var(--radius-lg);
-  padding: 32px;
+  padding: 28px;
   box-shadow: var(--shadow-strong);
   border: 1px solid rgba(16, 32, 59, 0.14);
-  max-width: 320px;
+  max-width: 300px;
 }
 
 .glass-card h2 {
@@ -307,7 +307,7 @@ p {
 .chat-bubble {
   display: flex;
   gap: 6px;
-  margin: 24px 0;
+  margin: 20px 0;
 }
 
 .dot {
@@ -344,9 +344,9 @@ p {
 
 .floating-card {
   position: absolute;
-  bottom: -32px;
-  right: -24px;
-  padding: 20px 24px;
+  bottom: -20px;
+  right: -12px;
+  padding: 18px 20px;
   background: var(--surface);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow);
@@ -355,7 +355,7 @@ p {
 }
 
 .trust-bar {
-  margin-top: 64px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -933,7 +933,7 @@ blockquote footer {
   }
 
   .hero-grid {
-    gap: 48px;
+    gap: 40px;
   }
 
   .cards-grid {
@@ -965,7 +965,7 @@ blockquote footer {
   }
 
   .hero {
-    padding: 140px 0 100px;
+    padding: 112px 0 72px;
   }
 
   .hero-copy h1 {
